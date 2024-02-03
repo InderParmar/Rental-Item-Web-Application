@@ -1,0 +1,16 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": " Assignment2 about rental company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "FAHAD ALI KHAN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4"
+  }
+}

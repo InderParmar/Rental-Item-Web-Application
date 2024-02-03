@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahad's Rental catalogue</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+ <header>
+    <h1>Fahad's Rentals</h1>
+    <form action="searchbar" method="POST">
+        <input type="text" name="Item" placeholder="Enter Keyword">
+        <button id="searchbar" type="submit">Search</button>
+    </form>
+ </header>
+<main>
+    <h2>Rental catalogue</h2>
+    <section id="Filter_part">
+        <form id="filter" action="_Filter" method="POST">
+            <label>Modify Results:      </label>
+            <select name="_filter">
+                <option value=""> Choose an option </option>
+                <option value="BasedOnAvailability">Items Available</option>
+                <option value="BasedOnRented">Items Borrowed by you</option>
+            </select>
+            <button type="submit">Update</button>
+        </form>
+
+        <form id="return" action="_return" method="POST">
+        <button>Return All Items</button>
+        </form>
+    </section>
+    
+    <section id="items_part">
+        {{#each item}}
+        <section id="items_display">
+            <h1>{{name}}</h1>
+            <img src="{{this.pic}}" alt="Pic coming soon!">
+            {{#if available}}
+                <form method="POST" action="/rent">
+                    <button>Rent Now</button>
+                </form>
+            {{else}}
+            <p>This item is currently rented.</p>
+            {{/if}}        
+            </section>
+        {{/each}}
+    </section>
+</main>
+</body>
+</html>

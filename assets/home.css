@@ -1,0 +1,117 @@
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c4949;
+    color: white;
+  }
+
+  header > form {
+    margin-bottom: 30px;
+    
+  }
+
+  header > form >input{
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 600px;
+  }
+
+#searchbar{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+#searchbar:hover {
+    background-color: #ddd;
+  }
+    
+  main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+main {
+    border-bottom: black  ;
+}
+
+
+#Filter_part {
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+    width: 75%;
+    box-sizing: border-box;
+    font-size: larger;
+    height: 100px; 
+
+  }
+  
+  #filter button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+
+  }
+  #filter button:hover {
+    background-color: #ddd;
+  }
+    
+  #return button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+  }
+  
+  #return button:hover {
+    background-color: #ddd;
+  }
+    
+
+  
+    #items_part {
+        justify-content: space-around;
+        align-items: center;
+        width: 75%;
+      }
+      
+      #items_display {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        margin-bottom: 30px;
+      }
+      
+      #items_display h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      #items_display img {
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+      }
+      
+      #items_display button {
+        margin-top: 10px;
+      }
+
+      #items_part section p {
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
